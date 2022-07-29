@@ -1,0 +1,3 @@
+map f <Action>(Back)
+map F <Action>(Forward)
+map gD <Action>(GotoImplementation)
