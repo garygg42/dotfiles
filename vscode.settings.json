@@ -6,5 +6,6 @@
         "<C-v>": false,
         "<C-a>": false,
         "<C-n>": false,
-        "<C-w>": false
+        "<C-w>": false,
+        "<C-o>": false
     }
