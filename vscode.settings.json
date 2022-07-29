@@ -4,5 +4,7 @@
         "<C-z>": false,
         "<C-c>": false,
         "<C-v>": false,
-        "<C-a>": false
+        "<C-a>": false,
+        "<C-n>": false,
+        "<C-w>": false
     }
