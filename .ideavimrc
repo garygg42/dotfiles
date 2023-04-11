@@ -1,3 +1,15 @@
-map f <Action>(Back)
-map F <Action>(Forward)
-map gD <Action>(GotoImplementation)
+set NERDTree
+set visualbell
+Plug 'terryma/vim-multiple-cursors'
+
+# Idea
+nmap s <Action>(Back)
+nmap S <Action>(Forward)
+nmap gd <Action>(GotoDeclaration)
+nmap gD <Action>(GotoImplementation)
+nmap <tab> <Action>(NextTab)
+nmap <a-tab> <Action>(PreviousTab)
+nmap xx <Action>(CloseAllEditorsButActive)
+# NerdTree
+nmap nn <Esc> :NERDTreeFind<cr>
+nmap mm <Esc> :NERDTreeFocus<cr>
