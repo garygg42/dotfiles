@@ -10,6 +10,7 @@ nmap gD <Action>(GotoImplementation)
 nmap <tab> <Action>(NextTab)
 nmap <a-tab> <Action>(PreviousTab)
 nmap xx <Action>(CloseAllEditorsButActive)
+nmap zz <Action>(CloseEditor)
 # NerdTree
 nmap nn <Esc> :NERDTreeFind<cr>
 nmap mm <Esc> :NERDTreeFocus<cr>
