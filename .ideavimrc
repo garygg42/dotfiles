@@ -1,28 +1,24 @@
-set hlsearch                              " highlight search occurrences
-set ignorecase                            " ignore case in search patterns
-set smartcase                             " no ignore case when pattern is uppercase
-set incsearch                             " show search results while typing
-set wrapscan                              " searches wrap around the end of the file
-set gdefault                              " substitute all occurrences in line per default
-set history=10000                         " keep x lines of command line history
-set scrolloff=5 sidescrolloff=10          " keep some lines before and after the cursor visible
-set clipboard=unnamedplus,unnamed,ideaput " integrate with system clipboard
-"set multiple-cursors
-"set surround                              " emulate vim-surround plugin
-set NERDTree
-set commentary
-set ideajoin
+set hlsearch
+set ignorecase
+set smartcase
+set incsearch
+set wrapscan
+set gdefault
+set history=1000
+set scrolloff=5 sidescrolloff=10
+set clipboard=unnamedplus,unnamed,ideaput
 set visualbell
+set ideajoin
+set NERDTree
 
 nnoremap <SPACE> <Nop>
 let mapleader = ' '
 
-"EditorCloneCaretBelow
+nmap <leader>l <Action>(ReformatCode)<Esc><Action>(OptimizeImports)<Esc>
+
 map <C-k> :action EditorCloneCaretAbove<CR>
 map <C-j> :action EditorCloneCaretBelow<CR>
 
-" Code navigation
-nmap <leader>l <Action>(ReformatCode)<Esc><Action>(OptimizeImports)<Esc>
 map s <Action>(Back)<Esc>
 map S <Action>(Forward)<Esc>
 
@@ -58,7 +54,6 @@ nmap <s-tab> <Action>(PreviousTab)<Esc>
 
 nmap x <Action>(CloseEditor)<Esc>
 nmap <leader>x <Action>(CloseAllEditorsButActive)<Esc>
-nmap <leader>a <Action>(HideAllWindows)<Esc>
 nmap <leader>a <Action>(HideAllWindows)<Esc>
 
 let g:NERDTreeMapActivateNode = 'l'
