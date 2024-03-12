@@ -9,5 +9,6 @@
         "<C-w>": false,
         "<C-o>": false,
         "<C-f>": false,
-        "<C-r>": false,
+        "<C-p>": false,
+        "<C-e>": false,
     }
